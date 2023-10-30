@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="code.svg" type="image/x-icon">
+        <title>A decicidir</title>
+
+        <!--BOOTSTRAP CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous">
+
+        <!--CSS-->
+        <link rel="stylesheet" href="styles/login.css">
+
+        <!--ICONS-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
+            rel='stylesheet'>
+
+    </head>
+
+    <body>
+        <div class="card-login">
+            <form action="">
+
+                <h1>Login</h1>
+
+                <!--LOGIN-->
+                <div class="input">
+                    <input type="text" placeholder="Username" id="username" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                
+
+                <!--Password-->
+                <div class="input">
+                    <input type="password" placeholder="Password" id="password" required>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+
+                <!--Remember me-->
+                <div class="remember">
+                        <label for=""><input type="checkbox" name="remember" placeholder="checkbox"/></label>Remember me
+                
+                    <a href="#">Forgot Password?</a>
+                </div>
+
+                <!--Buttom-login-->
+                <button  type="button" class="btn btn-outline-success" id="btn-login" onclick= logar()>Login</button>
+
+                <!--Register-->
+                <div class="register">
+                    <p>Don't you have an account?
+                        <a href="#">Register</a>
+                    </p>
+                </div>
+
+
+
+            </form>
+        </div>
+
+        <!--BOOTSTRAP SCRIPTS-->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+
+        <!--SCRIPTS JS-->
+        <script src="scripts/login.js"></script>
+
+    </body>
+
+</html>
